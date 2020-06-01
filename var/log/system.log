@@ -1534,3 +1534,8 @@ Class Magento\Framework\App\ResourceConnection\Proxy generation error: The reque
 [2020-06-01 18:57:17] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
 [2020-06-01 18:57:17] main.INFO: Broken reference: the 'yotpo_bottomline' element cannot be added as child to 'product.info.main', because the latter doesn't exist [] []
 [2020-06-01 18:57:17] main.INFO: Broken reference: the 'yotpo_bottomline' tries to reorder itself towards 'product.info.addto', but their parents are different: 'product.info.main' and '' respectively. [] []
+[2020-06-01 21:17:30] main.INFO: Broken reference: the 'catalog.compare.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2020-06-01 21:17:30] main.INFO: Broken reference: the 'sale.reorder.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2020-06-01 21:17:30] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2020-06-01 21:17:30] main.INFO: Broken reference: the 'yotpo_bottomline' element cannot be added as child to 'product.info.main', because the latter doesn't exist [] []
+[2020-06-01 21:17:30] main.INFO: Broken reference: the 'yotpo_bottomline' tries to reorder itself towards 'product.info.addto', but their parents are different: 'product.info.main' and '' respectively. [] []
