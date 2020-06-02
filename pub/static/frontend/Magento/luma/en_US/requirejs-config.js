@@ -271,6 +271,25 @@ require.config(config);
 var config = {
     map: {
         '*': {
+            bundleOption:   'Magento_Bundle/bundle',
+            priceBundle:    'Magento_Bundle/js/price-bundle',
+            slide:          'Magento_Bundle/js/slide',
+            productSummary: 'Magento_Bundle/js/product-summary'
+        }
+    }
+};
+
+require.config(config);
+})();
+(function() {
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+var config = {
+    map: {
+        '*': {
             creditCardType: 'Magento_Payment/js/cc-type',
             'Magento_Payment/cc-type': 'Magento_Payment/js/cc-type'
         }
@@ -330,8 +349,39 @@ require.config(config);
 var config = {
     map: {
         '*': {
+            downloadable: 'Magento_Downloadable/js/downloadable',
+            'Magento_Downloadable/downloadable': 'Magento_Downloadable/js/downloadable'
+        }
+    }
+};
+
+require.config(config);
+})();
+(function() {
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+var config = {
+    map: {
+        '*': {
             configurable: 'Magento_ConfigurableProduct/js/configurable'
         }
+    }
+};
+
+require.config(config);
+})();
+(function() {
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+var config = {
+    paths: {
+        'jquery/jquery-storageapi': 'Magento_Cookie/js/jquery.storageapi.extended'
     }
 };
 
@@ -349,20 +399,6 @@ var config = {
             requireCookie: 'Magento_Cookie/js/require-cookie',
             cookieNotices: 'Magento_Cookie/js/notices'
         }
-    }
-};
-
-require.config(config);
-})();
-(function() {
-/**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
- */
-
-var config = {
-    paths: {
-        'jquery/jquery-storageapi': 'Magento_Cookie/js/jquery.storageapi.extended'
     }
 };
 
@@ -394,8 +430,8 @@ require.config(config);
 var config = {
     map: {
         '*': {
-            downloadable: 'Magento_Downloadable/js/downloadable',
-            'Magento_Downloadable/downloadable': 'Magento_Downloadable/js/downloadable'
+            'taxToggle': 'Magento_Weee/js/tax-toggle',
+            'Magento_Weee/tax-toggle': 'Magento_Weee/js/tax-toggle'
         }
     }
 };
@@ -489,25 +525,6 @@ var config = {
     map: {
         '*': {
             pageCache:  'Magento_PageCache/js/page-cache'
-        }
-    }
-};
-
-require.config(config);
-})();
-(function() {
-/**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
- */
-
-var config = {
-    map: {
-        '*': {
-            bundleOption:   'Magento_Bundle/bundle',
-            priceBundle:    'Magento_Bundle/js/price-bundle',
-            slide:          'Magento_Bundle/js/slide',
-            productSummary: 'Magento_Bundle/js/product-summary'
         }
     }
 };
@@ -648,6 +665,39 @@ require.config(config);
 })();
 (function() {
 /**
+ * MageSpecialist
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to info@magespecialist.it so we can send you a copy immediately.
+ *
+ * @copyright  Copyright (c) 2017 Skeeller srl (http://www.magespecialist.it)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+
+'use strict';
+
+// eslint-disable-next-line no-unused-vars
+var config = {
+    config: {
+        mixins: {
+            'Magento_Ui/js/view/messages': {
+                'MSP_ReCaptcha/js/ui-messages-mixin': true
+            }
+        }
+    }
+};
+
+require.config(config);
+})();
+(function() {
+/**
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
@@ -733,55 +783,6 @@ require.config(config);
  */
 
 var config = {
-    config: {
-        mixins: {
-            'Magento_Checkout/js/action/place-order': {
-                'Magento_CheckoutAgreements/js/model/place-order-mixin': true
-            },
-            'Magento_Checkout/js/action/set-payment-information': {
-                'Magento_CheckoutAgreements/js/model/set-payment-information-mixin': true
-            }
-        }
-    }
-};
-
-require.config(config);
-})();
-(function() {
-/**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
- */
-
-var config = {
-    map: {
-        '*': {
-            braintreeClient: 'https://js.braintreegateway.com/web/3.48.0/js/client.min.js',
-            braintreeHostedFields: 'https://js.braintreegateway.com/web/3.48.0/js/hosted-fields.min.js',
-            braintreePayPal: 'https://js.braintreegateway.com/web/3.48.0/js/paypal-checkout.min.js',
-            braintree3DSecure: 'https://js.braintreegateway.com/web/3.48.0/js/three-d-secure.min.js',
-            braintreeDataCollector: 'https://js.braintreegateway.com/web/3.48.0/js/data-collector.min.js'
-        }
-    },
-    paths: {
-        braintreePayPalCheckout: 'https://www.paypalobjects.com/api/checkout.min'
-    },
-    shim: {
-        braintreePayPalCheckout: {
-            exports: 'paypal'
-        }
-    }
-};
-
-require.config(config);
-})();
-(function() {
-/**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
- */
-
-var config = {
     shim: {
         'Magento_Tinymce3/tiny_mce/tiny_mce_src': {
             'exports': 'tinymce'
@@ -821,30 +822,18 @@ require.config(config);
 })();
 (function() {
 /**
- * MageSpecialist
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Open Software License (OSL 3.0)
- * that is bundled with this package in the file LICENSE.txt.
- * It is also available through the world-wide-web at this URL:
- * http://opensource.org/licenses/osl-3.0.php
- * If you did not receive a copy of the license and are unable to
- * obtain it through the world-wide-web, please send an email
- * to info@magespecialist.it so we can send you a copy immediately.
- *
- * @copyright  Copyright (c) 2017 Skeeller srl (http://www.magespecialist.it)
- * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
  */
 
-'use strict';
-
-// eslint-disable-next-line no-unused-vars
 var config = {
     config: {
         mixins: {
-            'Magento_Ui/js/view/messages': {
-                'MSP_ReCaptcha/js/ui-messages-mixin': true
+            'Magento_Checkout/js/action/place-order': {
+                'Magento_CheckoutAgreements/js/model/place-order-mixin': true
+            },
+            'Magento_Checkout/js/action/set-payment-information': {
+                'Magento_CheckoutAgreements/js/model/set-payment-information-mixin': true
             }
         }
     }
@@ -861,8 +850,19 @@ require.config(config);
 var config = {
     map: {
         '*': {
-            'taxToggle': 'Magento_Weee/js/tax-toggle',
-            'Magento_Weee/tax-toggle': 'Magento_Weee/js/tax-toggle'
+            braintreeClient: 'https://js.braintreegateway.com/web/3.48.0/js/client.min.js',
+            braintreeHostedFields: 'https://js.braintreegateway.com/web/3.48.0/js/hosted-fields.min.js',
+            braintreePayPal: 'https://js.braintreegateway.com/web/3.48.0/js/paypal-checkout.min.js',
+            braintree3DSecure: 'https://js.braintreegateway.com/web/3.48.0/js/three-d-secure.min.js',
+            braintreeDataCollector: 'https://js.braintreegateway.com/web/3.48.0/js/data-collector.min.js'
+        }
+    },
+    paths: {
+        braintreePayPalCheckout: 'https://www.paypalobjects.com/api/checkout.min'
+    },
+    shim: {
+        braintreePayPalCheckout: {
+            exports: 'paypal'
         }
     }
 };
