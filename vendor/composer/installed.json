@@ -23219,6 +23219,50 @@
         ]
     },
     {
+        "name": "vpietri/adm-quickdevbar",
+        "version": "0.1.16",
+        "version_normalized": "0.1.16.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/vpietri/magento2-developer-quickdevbar.git",
+            "reference": "4cadea3d6800b5fc432bdd021111d3ea6fddbe4a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/vpietri/magento2-developer-quickdevbar/zipball/4cadea3d6800b5fc432bdd021111d3ea6fddbe4a",
+            "reference": "4cadea3d6800b5fc432bdd021111d3ea6fddbe4a",
+            "shasum": ""
+        },
+        "require": {
+            "magento/magento-composer-installer": "*",
+            "php": "~5.5|~5.6|~7.0"
+        },
+        "time": "2020-01-02T21:48:57+00:00",
+        "type": "magento2-module",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "registration.php"
+            ],
+            "psr-4": {
+                "ADM\\QuickDevBar\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "OSL-3.0",
+            "AFL-3.0"
+        ],
+        "authors": [
+            {
+                "name": "Vincent Pietri",
+                "homepage": "http://www.vincent-pietri.fr/",
+                "role": "Developer"
+            }
+        ],
+        "description": "QuickDevBar is a developer toolbar for magento 2"
+    },
+    {
         "name": "webmozart/assert",
         "version": "1.8.0",
         "version_normalized": "1.8.0.0",

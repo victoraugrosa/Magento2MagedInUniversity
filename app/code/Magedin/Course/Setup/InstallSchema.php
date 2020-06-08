@@ -5,7 +5,7 @@ namespace Magedin\Course\Setup;
 use Magento\Framework\Setup\InstallSchemaInterface;
 use Magento\Framework\Setup\ModuleContextInterface;
 use Magento\Framework\Setup\SchemaSetupInterface;
-use Magento\Framework\DB\Ddl\Table as DBTable;
+use Magento\Framework\DB\Ddl\Table;
 
 class InstallSchema implements InstallSchemaInterface
 {
@@ -25,7 +25,7 @@ class InstallSchema implements InstallSchemaInterface
             $setup->getTable('magedin_course')
         )->addColumn(
             'id', 
-            DBTable::TYPE_SMALLINT,
+            Table::TYPE_INTEGER,
             null,
             [
                 'identity' => true,
@@ -35,13 +35,13 @@ class InstallSchema implements InstallSchemaInterface
             'Table ID.'
         )->addColumn(
             'name',
-            DBTable::TYPE_TEXT,
+            Table::TYPE_TEXT,
             256,
             [
                 'nullable' => true
             ],
             'Random name.'
-        );
+         );
 
         $setup->getConnection()->createTable($table);
         $setup->endSetup();

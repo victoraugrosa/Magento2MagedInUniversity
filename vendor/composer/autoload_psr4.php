@@ -423,4 +423,5 @@ return array(
     'Amazon\\Core\\' => array($vendorDir . '/amzn/amazon-pay-and-login-with-amazon-core-module'),
     'AmazonPay\\' => array($vendorDir . '/amzn/amazon-pay-sdk-php/AmazonPay'),
     'AdobeStock\\Api\\' => array($vendorDir . '/astock/stock-api-libphp/src'),
+    'ADM\\QuickDevBar\\' => array($vendorDir . '/vpietri/adm-quickdevbar'),
 );

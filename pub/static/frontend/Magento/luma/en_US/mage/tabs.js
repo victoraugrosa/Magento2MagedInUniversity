@@ -1,1 +1,0 @@
-/var/www/html/magento2MagedUni/lib/web/mage/tabs.js

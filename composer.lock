@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "45ff59607c580138e63f2b1cf9da13d1",
+    "content-hash": "8802c624f0f8a09b45eda2dd881c07be",
     "packages": [
         {
             "name": "amzn/amazon-pay-and-login-magento-2-module",
@@ -17538,6 +17538,48 @@
                 "proprietary"
             ],
             "description": "Tools for communicating with Vertex Cloud and Vertex O-Series"
+        },
+        {
+            "name": "vpietri/adm-quickdevbar",
+            "version": "0.1.16",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vpietri/magento2-developer-quickdevbar.git",
+                "reference": "4cadea3d6800b5fc432bdd021111d3ea6fddbe4a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vpietri/magento2-developer-quickdevbar/zipball/4cadea3d6800b5fc432bdd021111d3ea6fddbe4a",
+                "reference": "4cadea3d6800b5fc432bdd021111d3ea6fddbe4a",
+                "shasum": ""
+            },
+            "require": {
+                "magento/magento-composer-installer": "*",
+                "php": "~5.5|~5.6|~7.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "ADM\\QuickDevBar\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Vincent Pietri",
+                    "homepage": "http://www.vincent-pietri.fr/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "QuickDevBar is a developer toolbar for magento 2",
+            "time": "2020-01-02T21:48:57+00:00"
         },
         {
             "name": "webonyx/graphql-php",

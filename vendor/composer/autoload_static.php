@@ -337,6 +337,7 @@ class ComposerStaticInit58a1de53f5228d8cea87cd6360346c5f
         'f1c1523a4c5d520b50bffc4a75ea5a5c' => __DIR__ . '/..' . '/magento/module-tax-sample-data/registration.php',
         'f3d4617c4b29f1082289d89745685dad' => __DIR__ . '/..' . '/magento/module-widget-sample-data/registration.php',
         '759d958743dba8d926c9111b82afe3e9' => __DIR__ . '/..' . '/magento/module-wishlist-sample-data/registration.php',
+        'b3cf9c681af347c256e27d1a22bd8bfd' => __DIR__ . '/..' . '/vpietri/adm-quickdevbar/registration.php',
         'b4cf39431a4b949eea8aa69ebb3d39da' => __DIR__ . '/../..' . '/app/etc/NonComposerComponentRegistration.php',
     );
 
@@ -826,6 +827,7 @@ class ComposerStaticInit58a1de53f5228d8cea87cd6360346c5f
             'Amazon\\Core\\' => 12,
             'AmazonPay\\' => 10,
             'AdobeStock\\Api\\' => 15,
+            'ADM\\QuickDevBar\\' => 16,
         ),
     );
 
@@ -2501,6 +2503,10 @@ class ComposerStaticInit58a1de53f5228d8cea87cd6360346c5f
         'AdobeStock\\Api\\' => 
         array (
             0 => __DIR__ . '/..' . '/astock/stock-api-libphp/src',
+        ),
+        'ADM\\QuickDevBar\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/vpietri/adm-quickdevbar',
         ),
     );
 

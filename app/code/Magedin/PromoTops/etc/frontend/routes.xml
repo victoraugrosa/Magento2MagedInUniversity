@@ -1,0 +1,7 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/routes.xsd">
+    <router id="standard">
+        <route id="promotops2" frontName="promotops">
+            <module name="Magedin_PromoTops"/>
+        </route>
+    </router>
+</config>

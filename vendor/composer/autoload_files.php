@@ -336,5 +336,6 @@ return array(
     'f1c1523a4c5d520b50bffc4a75ea5a5c' => $vendorDir . '/magento/module-tax-sample-data/registration.php',
     'f3d4617c4b29f1082289d89745685dad' => $vendorDir . '/magento/module-widget-sample-data/registration.php',
     '759d958743dba8d926c9111b82afe3e9' => $vendorDir . '/magento/module-wishlist-sample-data/registration.php',
+    'b3cf9c681af347c256e27d1a22bd8bfd' => $vendorDir . '/vpietri/adm-quickdevbar/registration.php',
     'b4cf39431a4b949eea8aa69ebb3d39da' => $baseDir . '/app/etc/NonComposerComponentRegistration.php',
 );
