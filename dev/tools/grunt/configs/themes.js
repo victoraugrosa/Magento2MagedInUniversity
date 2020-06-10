@@ -41,10 +41,20 @@ module.exports = {
         ],
         dsl: 'less'
     },
+    meu_tema: {
+        area: 'frontend',
+        name: 'Teste/meu_tema',
+        locale: 'en_US',
+        files: [
+            'css/styles-m',
+            'css/styles-l'
+        ],
+        dsl: 'less'
+    },
     backend: {
         area: 'adminhtml',
         name: 'Magento/backend',
-        locale: 'en_US',
+        locale: 'pt_BR',
         files: [
             'css/styles-old',
             'css/styles'
